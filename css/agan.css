@@ -1,0 +1,439 @@
+/* Код для подключения шрифта в /css/stylename.css */
+
+/* font-family: "CleanvertisingLight"; */
+@font-face {
+    font-family: "CleanvertisingLight";
+    src: url("../fonts/CleanvertisingLight/CleanvertisingLight.eot");
+    src: url("../fonts/CleanvertisingLight/CleanvertisingLight.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/CleanvertisingLight/CleanvertisingLight.woff") format("woff"),
+    url("../fonts/CleanvertisingLight/CleanvertisingLight.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "CleanvertisingBlack"; */
+@font-face {
+    font-family: "CleanvertisingBlack";
+    src: url("../fonts/CleanvertisingBlack/CleanvertisingBlack.eot");
+    src: url("../fonts/CleanvertisingBlack/CleanvertisingBlack.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/CleanvertisingBlack/CleanvertisingBlack.woff") format("woff"),
+    url("../fonts/CleanvertisingBlack/CleanvertisingBlack.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+html, body {
+    font-family: "CleanvertisingBlack";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+}
+.first-page{
+	background: #21c2f8;
+
+	position: relative;	
+	height: 100%;
+}
+.block-header{
+	height: 100px;
+	box-shadow: 0 0 12px #50505699;
+	background: #fff;
+}
+.block-header-left{
+	width: 40%;
+	min-width: 50px;
+	float: left;
+	text-align: center;	
+	display: inline-block;
+}
+.block-header-right{
+	min-width: 500px;	
+	width: 60%;
+	float: right;
+	text-align: center;	
+	display: inline-block;	
+}
+.block-header-logo{
+	position: absolute;
+	line-height: 100px;	
+	display: inline-block;
+}
+.block-header-logo img{
+	width: 120px;
+	height: auto;
+	vertical-align: middle;	
+	display: inline-block;
+}
+.block-header-logo p{
+	height: auto;
+	vertical-align: middle;	
+	display: inline-block;
+	color: #949393;
+	font-size: 20px;
+	margin-left: 10px;
+	margin-top: 10px;
+	font-weight: bold;
+}
+.block-header-logo p i{
+	color: #21c2f8;
+	font-style: normal;
+}
+.block-header-person{
+	position: absolute;
+	display: inline-block;
+}
+.block-header-person-button{
+	background: linear-gradient(to right, #21bcf1, #5ad2fb);	
+	border-radius: 5px;
+	width: auto;
+	padding: 5px 27px;
+	vertical-align: middle;	
+	display: inline-block;	
+	margin-top: 20px;
+	cursor: pointer;
+	min-width: 120px;
+}
+.block-header-person-button img{	
+	width: auto;
+	height: 30px;
+	display: inline-block;
+	position: relative;	
+	margin-left: 20px;	
+}
+.block-header-person-button p{
+    font-family: "CleanvertisingLight";	
+	margin-top: 10px;
+	font-size: 20px;
+	display: inline-block;	
+	color: #fff;
+}
+.block-main_search-wave{
+	left: 0;
+	right: 0;
+	height: auto;
+	position: relative;	
+	display: block;	
+}
+.block-main_search-bottom{
+	left: 0;
+	right: 0;
+	height: 15px;
+	position: relative;	
+	background: linear-gradient(to top, #67b0d1, #51c2f5);
+	display: block;	
+}
+.block-main_search-wave img{
+	width: 100%;
+}
+.block-main_search{
+	position: relative;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 10;
+	display: block;	
+}
+.block-main_search-header{
+	text-align: center;
+	color: #fff;
+	padding-top: 20px;
+}
+.block-main_search-header h1, .block-main_search-header h2{
+	font-size: 37px;
+	line-height: 30px;
+}
+.block-main_search-header h1{
+	font-weight: bold;
+    font-family: "CleanvertisingBlack";		
+}
+.block-main_search-header h2{
+    font-family: "CleanvertisingLight";
+}
+.block-main_search-form{
+	text-align: center;
+	margin-top: 100px;
+	width: 70%;
+	margin-left: 15%;
+}
+.row{
+	position: relative;
+	width: 100%;
+	min-height: 10px;
+	margin-top: 10px;
+	text-align: center;
+}
+.block-main_search-form-from_to-block{
+	position: relative;
+	width: 34%;
+	min-height: 10px;
+	min-width: 350px;	
+	margin-top: 10px;
+	text-align: center;
+	display: inline-block;
+}
+.block-main_search-form-arrows-block{
+	position: relative;
+	width: 5%;
+	min-width: 50px;	
+	min-height: 10px;
+	margin-top: 10px;
+	text-align: center;
+	display: inline-block;	
+}
+.block-main_search-form-date-block{
+	position: relative;
+	width: 24%;
+	min-width: 250px;	
+	min-height: 10px;
+	margin-top: 10px;
+	text-align: center;	
+	display: inline-block;	
+}
+.block-main_search-form-submit{
+	width: 100%;
+	text-align: center;
+	position: relative;
+	border: 1px solid black;	
+}
+.block-main_search-form input[type=submit]{
+	background: #eda558;
+	border: none;
+	color: #fff;
+    font-family: "CleanvertisingBlack";	
+	font-weight: bold;
+	font-size: 25px;
+	border-radius: 5px;
+	width: auto;
+	padding: 20px 40px;
+	vertical-align: middle;	
+	display: inline-block;	
+	margin-top: 20px;
+	cursor: pointer;
+	min-width: 120px;
+}
+.block-main_search-form-from_to{
+	width: 94%;	
+	margin: 3%;
+	height: 170px;
+	background: #fff;
+	overflow: hidden;
+	border-radius: 7px;
+}
+.block-main_search-form-from_to-select{
+	width: 200px;
+	float: left;
+	margin-left: 10px;
+}
+.block-main_search-form-from_to-select p{
+	color: #969696;
+    font-family: "CleanvertisingBlack";	
+	font-weight: bold;
+	font-size: 25px;
+	margin-top: 25px;
+}
+.block-main_search-form-from_to-select input[type=select]{
+	height: 50px;
+	margin-top: 10px;
+	margin-left: 15px;
+	width: 150px;	
+    font-family: "CleanvertisingLight";
+	font-size: 20px;	
+	border: none;
+}
+.block-main_search-form-from_to-img{
+	width: 100px;
+	float: right;
+	margin-right: 10px;
+	line-height: 150px;
+}
+.block-main_search-form-from_to-img img{
+	width: 100px;
+	height: auto;
+	vertical-align: middle;		
+}
+.block-main_search-form-arrows{
+	width: 5%;	
+	min-width: 50px;
+	padding: 5px;
+	height: 160px;
+	display: inline-block;
+	overflow: hidden;
+	border-radius: 7px;	
+}
+.block-main_search-form-arrow_right, .block-main_search-form-arrow_left{
+	line-height: 80px;		
+}
+.block-main_search-form-arrows img{
+	width: 40px;
+	height: auto;
+	vertical-align: middle;		
+}
+.block-main_search-form-date{
+	width: 90%;	
+	min-width: 300px;
+	height: 170px;
+	display: inline-block;
+	position: relative;
+}
+.block-main_search-form-date-to{
+	background: #fff;
+	height: 70px;
+	width: 90%;		
+	min-width: 250px;
+	position: absolute;
+	top: 0;	
+	border-radius: 7px;	
+}
+.block-main_search-form-date-from{
+	background: #fff;
+	height: 70px;
+	width: 90%;		
+	min-width: 250px;
+	position: absolute;
+	bottom: 0;	
+	border-radius: 7px;		
+}
+.block-main_search-form-date-to-select{
+	float: left;
+	width: 150px;
+	margin: 0 10px;	
+}
+.block-main_search-form-date-to-select input[type=date]{
+	height: 50px;
+	margin-top: 10px;
+	margin-left: 15px;
+	width: 150px;	
+    font-family: "CleanvertisingLight";
+	font-size: 20px;	
+	border: none;
+}
+.block-main_search-form-date-to-img{
+	float: right;
+	width: 30px;
+	margin: 0 10px;
+	line-height: 70px;
+}
+.block-main_search-form-date-to-img img{
+	width: 100%;
+	height: auto;
+	vertical-align: middle;		
+}
+.block-main_search-form-swich-block{
+    margin-top: 20px;
+    height: 50px;
+    width: 100%;
+    display: block;
+	text-align: right;
+}
+.block-main_search-form-swich {
+	display: inline-block;
+	position: absolute;
+	right: 4%;
+}
+.block-main_search-form-swich-radio {
+	width: auto;
+	float: right;	
+	min-width: 70px;
+	margin-left: 20px;
+}
+.block-main_search-form-swich-text {
+	width: auto;
+	float: left;	
+	text-align: right;	
+}
+.block-main_search-form-swich-text p{	
+	color: #fff;
+    font-family: "CleanvertisingLight";
+	font-size: 20px;		
+}
+
+.toggle-bg{
+	float: right;
+	padding: 3px;
+	background: #fff;
+	border-radius: 7px;
+	display: block; /* ...So that we can set a height and width */
+	height: 30px; /* You can change this later if you want */
+	position: relative; /* Required to allow the switch to move around */
+	width: 70px; /* This can be changed later as well */
+	display: inline-block;	
+}
+
+.toggle-bg input{
+	height: 30px;
+	left: 0;
+	margin: 0; /* Reset the margins and padding */
+	opacity: 0; /* Invisible! */
+	padding: 0;
+	position: absolute;
+	top: 0;
+	width: 70px;
+	z-index: 2; /* We want the input to be over the span.switch, which we'll give a z-index of 1 */
+		/*IE*/
+		zoom: 1;
+		filter: alpha(opacity=0);
+}
+
+.switch{
+	background: #ffffff;
+	
+	 -khtml-border-radius: 30px;
+	   -moz-border-radius: 30px;
+	    -ms-border-radius: 30px;
+	     -o-border-radius: 30px;
+	-webkit-border-radius: 30px;
+	        border-radius: 30px;
+	
+	
+	 -khtml-box-shadow: 0 1px 1px #65727b, 0 0 1px #b6bdc2;
+	   -moz-box-shadow: 0 1px 1px #65727b, 0 0 1px #b6bdc2;
+	    -ms-box-shadow: 0 1px 1px #65727b, 0 0 1px #b6bdc2;
+	     -o-box-shadow: 0 1px 1px #65727b, 0 0 1px #b6bdc2;
+	-webkit-box-shadow: 0 1px 1px #65727b, 0 0 1px #b6bdc2;
+	        box-shadow: 0 1px 1px #65727b, 0 0 1px #b6bdc2;
+	
+	display: block;
+	float: left;
+	height: 30px;
+	left: -1px; /* This is the starting point. When adding a border radius, a small bit of the background is shown if we use left: 0;, so -1px is best.*/
+	position: relative;
+	top: 0; /* ...To keep it centered vertically */
+	
+	 -khtml-transition: left .2s ease;
+	   -moz-transition: left .2s ease;
+	    -ms-transition: left .2s ease;
+	     -o-transition: left .2s ease;
+	-webkit-transition: left .2s ease;
+	        transition: left .2s ease;
+	
+	width: 30px;
+	z-index: 1; /* Remember, it must be below the invisible inputs */
+}
+
+.toggle-bg input:checked~.switch{left: -1px;} /* initial toggle position */
+
+.toggle-bg input~:checked~.switch{left: 41px; 	background: #21c2f8;} /* final relative toggle position */
+
+.toggle-bg input:checked{z-index: 0;}
+
+@media (max-width: 960px) {
+  .block-main_search-form-arrows-block {
+    display: none;
+  }
+.first-page{
+overflow: scroll;
+}  
+.block-main_search-form {
+    margin-top: 20px;
+}
+.block-main_search-wave{
+	bottom: 0;
+	vertical-align: bottom;	
+	position: relative;	
+display: block;	
+}
+.block-main_search-bottom{
+	vertical-align: bottom;	
+	position: relative;	
+	display: block;
+}
+}
