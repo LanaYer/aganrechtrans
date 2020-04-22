@@ -1,0 +1,130 @@
+.block-personal_panel, .block-ticket{
+	color: #949393;
+    font-family: "CleanvertisingLight";	
+	font-size: 22px;
+	/*min-height: 500px;*/	   /*тут вылазил косяк, блок не отображался на всю высоту, а только лишь на 500px  */
+	height: 900px; /*оптимальная высота для адекватного отображения блока */
+	position: relative;
+}
+.block-personal_panel p, .block-ticket p{
+	color: #949393;
+    font-family: "CleanvertisingLight";	
+	font-size: 20px;	
+}
+.block-personal_panel-table, .block-ticket-table{
+	min-height: 500px;	
+	text-align: center;
+    border: 1px solid #c3c4c5;
+    border-radius: 10px;
+	margin: 20px;
+	position: absolute;	
+	left: 0;
+	right: 0;	
+}
+.block-personal_panel-table table, .block-ticket-table table{	
+	text-align: center;
+    border-radius: 10px;
+	width: 100%;	
+    margin-left: auto;
+    margin-right: auto;
+	border-collapse: collapse;	
+}
+.block-personal_panel table th, .block-ticket-table table th{
+	padding-top: 10px;
+}
+.block-personal_panel table th p{
+	font-weight: bold;
+    font-family: "CleanvertisingBlack";	
+}
+.block-personal_panel table td{	
+	padding-top: 10px;
+    border-bottom: 1px solid #c3c4c5;	
+}
+.border-right{
+    border-right: 1px solid #c3c4c5;	
+}
+.border-left{
+    border-left: 1px solid #c3c4c5;		
+}
+.block-personal_panel-table table tr:first-child th:first-child { border-top-left-radius: 10px; }
+.block-personal_panel-table table tr:first-child th:last-child { border-top-right-radius: 10px; }
+
+
+.block-personal_panel-table-border, .block-ticket-table-border{
+	border: 2px solid #dc9526;
+	height: 49px;	
+	text-align: center;
+    border-radius: 10px;
+	position: absolute;	
+	left: 0;
+	right: 0;	
+	margin: 20px;
+	z-index: 10;
+}
+.block-personal_panel-table ul li{
+	display: inline;
+	padding: 15px 10px;
+    border: 1px solid #c3c4c5;
+    border-radius: 10px;
+	margin: 5px;	
+}
+.block-personal_panel-table ul li img{	
+	height: auto;
+	width: 30px;
+}
+/*-----------------------------------------------------------------------*/
+.block-ticket-table table th p{
+    font-family: "CleanvertisingLight";	
+}
+.block-ticket-table table th p span{
+    font-family: "CleanvertisingBlack";	
+}
+.block-ticket-table-left_col{
+	margin-left: 50px;	
+}
+.block-ticket-table table td{	
+	padding-top: 15px;	
+	text-align: left;
+}
+.block-ticket-table-info{
+	padding: 10px;
+    border: 1px solid #c3c4c5;
+    border-radius: 10px;
+	width: 256px;
+}
+#passenger2_passport-cell {
+    vertical-align: top;
+}
+#passengers-cell .block-ticket-table-info{
+	width: 30px;	
+}
+#transport_type-cell .block-ticket-table-info{
+	padding: 0;	
+	color: #20bcf1;
+}
+#transport_type-cell .block-ticket-table-info {
+	border: none;
+}
+#transport_type-cell .block-ticket-table-info span{
+	padding: 10px 15px;
+    border: 1px solid #20bcf1;	
+}
+.transport_type-left{
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;	
+}
+.transport_type-right{
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;	
+}
+.transport_type-selected{
+	background-color: #20bcf1;
+	color: #fff;
+}
+.block-ticket-table img{
+	padding: 10px 10px;
+    border: 1px solid #c3c4c5;
+    border-radius: 10px;	
+	height: auto;
+	width: 30px;
+}

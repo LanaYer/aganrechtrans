@@ -1,18 +1,18 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
  
     <meta name="description" content="{{$description}}">
     <meta name="keywords" content=" {{$meta_keywords}} "/>
-    <title>������������</title>
-	
-    <!-- css -->
-    <link href="css/reset.css}" rel="stylesheet">
+    <title>Аганречтранс</title>
+    <link href="css/reset.css" rel="stylesheet">
     <link href="css/material.css" rel="stylesheet">
     <link href="css/material.min.css" rel="stylesheet">	
-    <link href="css/agan.css" rel="stylesheet">	
+    <link href="css/agan.css" rel="stylesheet">
 	<link href="css/news.css" rel="stylesheet">
+	<link href="css/modal_form.css" rel="stylesheet">
+	<link href="css/personal-panel.css" rel="stylesheet">	
 </head>
 
 <body>
@@ -21,35 +21,74 @@
 			<div class="block-header-left"> 
 				<div class="block-header-logo"> 
 					<img src="img/logo.png">
-					<p><i>����</i>��������</p>			
+					<p><i>АГАН</i>РЕЧТРАНС</p>			
 				</div>		
 			</div>	
 			<div class="block-header-right"> 
 				<div class="block-header-person"> 
-					<div class="block-header-person-button"> 
-						<p>������ �������</p>				
+					<div class="block-header-person-button" id="block-header-person-button"> 
+						<p>Личный кабинет</p>				
 						<img src="img/avatar.png">		
-					</div>		
+					</div>	
+					<div class="authorization-form" id="authorization-form"> 
+						<a href="#close" class="close-modal" id="close-auth_form"></a>
+						<p class="modal-header">Авторизация</p>		
+						<form action="">
+							<p><input id="email" name="" type="text" placeholder="Введите телефон или email"></p>
+								<div class="authorization-form-hint"> 
+									<p>Сейчас на Ваш телефон или email придет сообщение с временным паролем</p>				
+								</div>	
+							<p><input id="pass" name="pass" type="password" placeholder="Введите пароль"></p>
+							<p><input type="submit" value=""></p>
+						</form>					
+					</div>						
 				</div>		
 			</div>			
-		</div>
-		<div class="block-main_search"> 
+		</div>						
+			
+		<script type="text/javascript">
+			document.getElementById("block-header-person-button").onclick=function(){
+				document.getElementById("authorization-form").style="display: block;";
+			}; 
+			document.getElementById("close-auth_form").onclick=function(){
+				document.getElementById("authorization-form").style="display: none;";
+			}			
+		</script>	
+			
+					
+		<div class="container block-main_search"> 
 			<div class="block-main_search-header"> 
-				<h1>����� �������</h1>
-				<h2>������ ������ ������ ������ �� �����</h2>				
+				<h1>Поиск билетов</h1>
+				<h2>Лучший способ купить билеты на паром</h2>				
 			</div>	
 			<div class="block-main_search-form"> 
 				 <form action="">
-					<div class="row"> 				
+					<div class=""> 				
 						 <div class="block-main_search-form-from_to-block"> 
-							<div class="block-main_search-form-from_to"> 
-								<div class="block-main_search-form-from_to-select"> 
-									<p>��������</p>	
-									<input type="select" placeholder="����� �����������">								
-								</div>						
-								<div class="block-main_search-form-from_to-img"> 
-									<img src="img/boat.png">				
-								</div>					
+							<div class="block-main_search-form-from_to">
+								<ul  class="from_to-list">
+
+									<li class="default select-from">
+										<p class="list-header">Выберите</p>
+										<p class="list-small-text">пункт<br> назначения</p>
+
+									</li>
+
+
+									<li class="">
+										<p class="list-header">Порт "Обь"</p>
+										<p class="list-small-text">ул. Грибоедова<br> причал 1</p>
+
+									</li>
+
+									<li>
+										<p class="list-header">Выберите</p>
+										<p class="list-small-text">пункт<br> назначения</p>
+
+									</li>
+
+
+								</ul>
 							</div>
 						</div>	
 						<div class="block-main_search-form-arrows-block"> 
@@ -62,22 +101,56 @@
 								</div>											
 							</div>											
 						</div>	
-						<div class="block-main_search-form-from_to-block"> 	
-							<div class="block-main_search-form-from_to"> 
-								<div class="block-main_search-form-from_to-select"> 
-									<p>��������</p>		
-									<input type="select" placeholder="����� ��������">							
-								</div>						
-								<div class="block-main_search-form-from_to-img"> 
-									<img src="img/boat1.png">							
-								</div>					
+						<div class="block-main_search-form-from_to-block">
+
+							<div class="block-main_search-form-from_to">
+
+								<ul  class="from_to-list opened">
+
+									<li class="default select-to">
+										<p class="list-header">Выберите</p>
+										<p class="list-small-text">пункт<br> назначения</p>
+
+									</li>
+
+
+									<li>
+										<p class="list-header">Выберите</p>
+										<p class="list-small-text">пункт<br> назначения</p>
+
+									</li>
+
+									<li class="">
+										<p class="list-header">Порт "Мужи"</p>
+										<p class="list-small-text">ул.Добровольского<br> причал 3</p>
+
+									</li>
+
+
+								</ul>
+
+								<script type="text/javascript">
+
+									/*var select_list, li_elem, i, arrE=[];
+									select_list = document.getElementsByClassName("from_to-list");
+									li_elem= select_list;
+									i = select_list.length;
+									while(i--){
+										if(select_list[i].className == "opened") arrE.push(select_list[i]);
+									};
+									console.log(arrE,"kjjlj"); */
+
+								</script>
+
+
 							</div>
+
 						</div>	
 						<div class="block-main_search-form-date-block"> 
 							<div class="block-main_search-form-date"> 
 								<div class="block-main_search-form-date-to"> 
 									<div class="block-main_search-form-date-to-select"> 
-										<input type="date" placeholder="���� �����������">
+										<input type="date" placeholder="Дата отправления">
 									</div>	
 									<div class="block-main_search-form-date-to-img"> 
 										<img src="img/1482336581_calendar.png">						
@@ -85,7 +158,7 @@
 								</div>	
 								<div class="block-main_search-form-date-from"> 
 									<div class="block-main_search-form-date-to-select"> 
-										<input type="date" placeholder="���� ��������">
+										<input type="date" placeholder="Дата прибытия">
 									</div>	
 									<div class="block-main_search-form-date-to-img"> 
 										<img src="img/1482336581_calendar.png">						
@@ -94,10 +167,10 @@
 							</div>				
 						</div>
 					</div>					 
-					<div class="row"> 
+					<div class="row_right"> 
 						<div class="block-main_search-form-swich"> 
 							<div class="block-main_search-form-swich-text"> 
-								<p>��������� � ���� �������</p>					
+								<p>Переправа в одну сторону</p>					
 							</div>	
 							<div class="block-main_search-form-swich-radio"> 
 								<span class="toggle-bg">
@@ -108,8 +181,8 @@
 							</div>						
 						</div>						
 					</div>
-					<div class="row"> 					
-						<p><input type="submit"  value="������ �����"></p>						
+					<div class="row_center"> 					
+						<p><input type="submit"  value="Купить билет"></p>						
 					</div>										
 				 </form>			
 			</div>						
@@ -123,44 +196,81 @@
 	</div>
 	
 	<div class="mdl-layout__container">
-    <div class="mdl-layout__content">
+    <div class="content_center mdl-layout__content">
         <div class="mdl-grid">
        <div class="mdl-cell mdl-cell--1-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
         <div class="mdl-cell mdl-cell--10-col">
-            <h3 class="block-news__header">�������</h3>
+            <h3 class="block-news__header">Новости</h3>
             <div class="block-news__elements">
                 <div class="block-news__element">
                     <div class="news-element_header ">
-                        <span class="news-header__text">16 ������� <i class="fa fa-calendar" aria-hidden="true"></i></span>
+                        <span class="news-header__text">16 Декабря <i class="icon-img calendar"></i></span>
                     </div>
                     <div class="news-element_body">
-                        <p class="news-element__title">������ ���������� ��������� ������������</p>
-                        <p class="news-element__text">�������������� �� ����������� ���������� ��������</p>
+                        <p class="news-element__title">Работа керченской переправы возобновлена</p>
+                        <p class="news-element__text">Осуществляется по фактическим договорным условиям</p>
                     </div>
                 </div>
                 <div class="block-news__element">
                     <div class="news-element_header ">
-                        <span class="news-header__text">16 ������� <i class="fa fa-calendar" aria-hidden="true"></i></span>
+                        <span class="news-header__text">16 Декабря <i class="icon-img calendar"></i></span>
                     </div>
                     <div class="news-element_body">
-                        <p class="news-element__title">������ ���������� ��������� ������������</p>
-                        <p class="news-element__text">�������������� �� ����������� ���������� ��������</p>
+                        <p class="news-element__title">Работа керченской переправы возобновлена</p>
+                        <p class="news-element__text">Осуществляется по фактическим договорным условиям</p>
                     </div>
                 </div>
                 <div class="block-news__element">
                     <div class="news-element_header ">
-                        <span class="news-header__text">16 ������� <i class="fa fa-calendar" aria-hidden="true"></i></span>
+                        <span class="news-header__text">16 Декабря <i class="icon-img calendar"></i></span>
                     </div>
                     <div class="news-element_body">
-                        <p class="news-element__title">������ ���������� ��������� ������������</p>
-                        <p class="news-element__text">�������������� �� ����������� ���������� ��������</p>
+                        <p class="news-element__title">Работа керченской переправы возобновлена</p>
+                        <p class="news-element__text">Осуществляется по фактическим договорным условиям</p>
                     </div>
                 </div>
             </div>
         </div>
 
         </div>
-    </div>
-    </div>
+   		 </div>
+
+
+
+		<footer class="agan-footer-block mdl-mega-footer">
+			<div class="mdl-mega-footer--top-section">
+				<div class="block-news__waves">
+					<img src="img/footer_waves.png" alt="">
+				</div>
+			</div>
+			<div class="agan-footer mdl-mega-footer--middle-section">
+				<div class="mdl-mega-footer--left-section left-side">
+					<div class="footer-logo">
+						<img src="img/footer_logo.png" alt="">
+						<p>АГАНРЕЧТРАНС</p>
+					</div>
+					<p class="footer-about_text">Наша компания создана, чтобы помогать людям и бизнесу работать, жить и развиваться.</p>
+
+					<p class="footer-about_text">Наши суда всегда находятся в отличном техническом состоянии, а команда всегдаподготовлена, обучена и готова к работе.</p>
+				</div>
+
+				<div class="mdl-mega-footer--right-section right-side">
+					<p class="footer-contact_title">Наши контакты :</p>
+					<div class="contact">
+						<div class="icon-img map-marker contact-left"></div>  <p class="footer-about_text contact-right"> 628614, РФ, Тюменская область, ХМАО - Югра, г. Нижневартовск Юго-Западный промышленный узел, панель 25, ул. 2П-2, д. 97 </p>
+					</div>
+					<div class="contact">
+						<div class="icon-img envelope contact-left"></div>     <p class="footer-about_text contact-right">sk.art2011@yandex.ru</p></div>
+					<div class="contact">
+						<div class="icon-img telephone contact-left"></div>    <p class="footer-about_text contact-right">Телефон: 8(3466)25-14-14, 8(3466)63-47-42 </p></div>
+
+				</div>
+			</div>
+		</footer>
+
+	</div>
+
+
+
 </body>
 </html>

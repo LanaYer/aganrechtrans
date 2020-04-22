@@ -1,0 +1,285 @@
+.overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.55);
+    display: block;
+    overflow: auto; /*overflow: hidden; */
+    width: 100%;
+    height: 100%;
+    z-index: 10000;
+}
+
+.block-modal{
+    position: relative;
+    width: 800px;
+    height: auto;
+    margin: 7% auto;
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.close-modal {
+    z-index: 9999;
+    position: absolute;
+    right: 15px;
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    background-image: url(../img/close_img.png);
+    text-align: center;
+    text-decoration: none;
+    line-height: 26px;
+    margin-top: 0;
+    cursor: pointer;
+	border-radius: 50%;
+}
+.close-modal:hover {
+	background-color: #21c2f8;
+    background-image: url(../img/close_img.png);
+    background-image: url(../img/close_white_img.png);	
+
+}
+
+.modal-header{
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    font-size: 23px!important;
+    font-family: "CleanvertisingBlack"!important;
+    line-height: 30px;
+    margin-bottom: 20px;
+    color: #8e8e8e;
+}
+
+.modal-form{
+    /* display: inline-block;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    margin: 0 40px;
+}
+
+
+.modal-info-block{
+    display: inline-block;
+    width: 550px;
+    position: relative;
+    padding: 0;
+    margin-right: 45px;
+    margin-bottom: 30px;
+}
+
+.modal-info-block label{
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 12px;
+    font-family: CleanvertisingLight;
+    font-size: 25px;
+}
+
+
+
+.modal-info-block input[type='text']{
+    display: block;
+    width: 350px;
+    font-size: 18px;
+    font-family: "CleanvertisingLight";
+    border: 1px solid #adafb0;
+    padding: 10px 25px;
+    border-radius: 10px;
+
+}
+
+
+.modal-info-text{
+    display: inline-block;
+    width: 100%;
+    font-family: CleanvertisingLight;
+    font-size: 25px;
+    margin-bottom: 12px;
+
+}
+
+.select-btn-default{
+    display: inline-block;
+    float: left;
+    height: 40px;
+    width: 198px;
+    border-radius:0 10px 10px 0;
+    border: 1px solid #20bcf1;
+    background-color: #ffffff;
+    color: #20bcf1;
+    font-family: CleanvertisingLight;
+    font-size: 23px;
+    line-height: 38px;
+    text-decoration: none;
+    margin: 0;
+    text-align: center;
+    vertical-align: middle;
+}
+.select-btn-default:hover, .select-btn-default:focus{
+    text-decoration: none;
+}
+
+
+.select-btn-active{
+    display: inline-block;
+    float: left;
+    height: 40px;
+    width: 198px;
+    border-radius: 10px 0 0 10px;
+    border: 1px solid #20bcf1;
+    background-color: #20bcf1;
+    color: #ffffff;
+    font-family: CleanvertisingLight;
+    font-size: 23px;
+    line-height: 38px;
+    margin: 0;
+    text-decoration: none;
+    text-align: center;
+    vertical-align: middle;
+}
+.select-btn-active:hover, .select-btn-active:focus{
+    text-decoration: none;
+}
+
+.modal-button-container{
+    display: inline-block;
+    width: 400px;
+    height: auto;
+    text-align: center;
+}
+.modal-input-container{
+    display: inline-block;
+    width: 400px;
+}
+
+.modal-input-container input[type='text']:first-child{
+    margin-bottom: 21px;
+}
+
+.modal-input-container input[type='text']{
+    display: block;
+    width: 350px;
+    font-size: 18px;
+    font-family: "CleanvertisingLight";
+    border: 1px solid #adafb0;
+    padding: 10px 25px;
+    border-radius: 10px;
+}
+
+.modal-small-input{
+    display: block;
+    width: 100px;
+    height: auto;
+}
+
+.modal-small-input input[type='text']{
+    display: block;
+    width: 15px;
+    font-size: 18px;
+    font-family: "CleanvertisingLight";
+    border: 1px solid #adafb0;
+    padding: 10px 25px;
+    border-radius: 10px;
+}
+/*
+.modal-small-input input[type='checkbox']{
+    display: block;
+    width: 15px;
+    font-size: 18px;
+    font-family: "CleanvertisingLight";
+    border: 1px solid #adafb0;
+    padding: 10px 25px;
+    border-radius: 10px;
+}
+*/
+.modal-push-btn{
+    display: inline-block;
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    font-size: 25px;
+    font-family: "CleanvertisingLight";
+    text-align: center;
+}
+
+.modal-lg-btn{
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 25px;
+    font-family: "CleanvertisingLight";
+    line-height: 68px;
+    width: 500px;
+    height: 75px;
+    padding: 0;
+    border-radius: 10px;
+    text-decoration: none;
+    background-color: #20bcf1;
+    border: 1px solid #20bcf1;
+    color: #ffffff;
+}
+
+.modal-lg-btn:hover,.modal-lg-btn:focus{
+    text-decoration: none;
+}
+
+.margin-top-10{
+    margin-top: 10px;
+    text-align: center;
+}
+.custom-checkbox{
+    width: 66px;
+    height: 42px;
+
+}
+.custom-checkbox input[type='checkbox']{
+    display: none;
+}
+
+.custom-checkbox label{
+    cursor: pointer;
+    position: absolute;
+    margin: 0;
+    width: 66px;
+    height: 42px;
+    top: 40px;
+    left: 0;
+    background-color: #ffffff;
+    border: 1px solid #adafb0;
+    border-radius: 10px;
+}
+
+.custom-checkbox label:after{
+    opacity: 0.1;
+    content: '';
+    position: absolute;
+    width: 19px;
+    height: 15px;
+    background: transparent;
+    top: 8px;
+    left: 21px;
+    border: 3px solid #20bcf1;
+    /*border: 3px solid #eda558;*/
+    border-top: none;
+    border-right: none;
+    transform: rotate(-45deg);
+
+
+}
+
+.custom-checkbox label:hover::after {
+    opacity: 0.3;
+}
+
+.custom-checkbox input[type=checkbox]:checked + label:after {
+    opacity: 1;
+
+}
